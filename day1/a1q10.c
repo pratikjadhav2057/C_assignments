@@ -13,8 +13,10 @@ int main()
  printf("put the length of triangl: ");
  int a,b,c;
  scanf("%d%d%d",&a,&b,&c);
- printf("perimeter of a triangle is %d",a+b+c);
- float area;
-
+ int s=a+b+c;
+ printf("perimeter of a triangle is %d\n",a+b+c);
+ float area,temp=s*(s-a)*(s-b)*(s-c);
+ printf("the area of triangle is: %f\n",sqrt(temp));
+}
  
 
